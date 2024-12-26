@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שירן אוריך - צילומי תדמית</title>
+    <style>
+        body {
+            font-family: 'Heebo', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c757d;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background-color: #495057;
+            padding: 1rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1920x600');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #343a40;
+            margin-bottom: 1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .instagram-feed {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .instagram-feed iframe {
+            border: none;
+            width: 300px;
+            height: 380px;
+        }
+
+        .contact {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #343a40;
+        }
+
+        footer {
+            background-color: #495057;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>שירן אוריך - צילומי תדמית</h1>
+        <p>כי התדמית שלך מתחילה כאן</p>
+    </header>
+    <nav>
+        <a href="#services">שירותים</a>
+        <a href="#gallery">גלריה</a>
+        <a href="#contact">צור קשר</a>
+    </nav>
+    <div class="hero">
+        <h1>תמונה אחת שווה אלף מילים</h1>
+    </div>
+    <section id="services">
+        <h2>השירותים שלנו</h2>
+        <p>שירן אוריך מתמחה בצילומי תדמית מקצועיים עבור אנשי עסקים, חברות, ומותגים. כל צילום נעשה עם דגש על מקצועיות, אסתטיקה, והתאמה לצרכים הייחודיים של הלקוח.</p>
+    </section>
+    <section id="gallery">
+        <h2>גלריה</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="תמונה 1">
+            <img src="https://via.placeholder.com/300" alt="תמונה 2">
+            <img src="https://via.placeholder.com/300" alt="תמונה 3">
+            <img src="https://via.placeholder.com/300" alt="תמונה 4">
+        </div>
+    </section>
+    <section id="instagram">
+        <h2>מהאינסטגרם</h2>
+        <div class="instagram-feed">
+            <iframe src="https://www.instagram.com/shiranurich/embed" allowtransparency="true" scrolling="no"></iframe>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>צור קשר</h2>
+        <form class="contact">
+            <label for="name">שם מלא:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">אימייל:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">הודעה:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">שלח</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 שירן אוריך - כל הזכויות שמורות</p>
+    </footer>
+</body>
+</html>
